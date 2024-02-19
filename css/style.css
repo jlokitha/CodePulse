@@ -1,0 +1,140 @@
+header {
+  background-color: black;
+  color: white;
+  padding: 20px; /* Changed the padding to reduce height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+  font-size: 40px; /* Reducing the font size of the heading */
+  margin-left: 50px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid transparent; /* Adding transparent border initially */
+  transition: border-color 0.3s; /* Adding transition for smooth effect */
+  border-radius: 10px;
+}
+
+nav ul li a:hover {
+  border-color: white; /* Changing border color on hover */
+  padding: 10px;
+}
+
+section img {
+  height: 400px;
+  width: 50%;
+}
+
+.image-group {
+  flex: 1;
+  display: flex;
+  margin: 0;
+}
+
+.image-group div img {
+  width: 100%;
+  height: auto;
+}
+
+.image-group div:not(:last-child) {
+  margin-right: 4px; /* Add margin between images, except for the last one */
+}
+
+#About {
+  color: white;
+  margin: 15px;
+  padding-left: 20px;
+}
+
+#About div p {
+  font-size: 20px;
+}
+
+#About div ul li {
+  font-size: 20px;
+}
+
+#About div h2 {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 7px 20px;
+  display: inline-block;
+}
+
+#Contact {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  padding-left: 20px;
+}
+
+#Contact div h2 {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 7px 20px;
+  display: inline-block;
+}
+
+#Contact div form {
+  position: relative;
+}
+
+#Contact div form input,
+form textarea {
+  width: 50%;
+  padding: 17px;
+  border: none;
+  outline: none;
+  background: #191919;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+}
+
+#Contact div form textarea {
+  resize: none;
+  height: 200px;
+}
+
+#Contact div form .btn {
+  display: inline-block;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  width: 220px;
+  transition: ease .20s;
+  cursor: pointer;
+}
+
+#Contact div form .btn:hover {
+  border: 2px solid #191919;
+  background: transparent;
+  transform: scale(1.1);
+}
