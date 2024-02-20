@@ -1,15 +1,17 @@
+body {
+  margin: 0%;
+  background-color: rgb(49, 49, 49);
+}
+
 header {
   background-color: black;
   color: white;
-  padding: 20px; /* Changed the padding to reduce height */
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-section {
-  padding-left: 20px;
-  padding-right: 20px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 
 h1 {
@@ -42,15 +44,53 @@ nav ul li a:hover {
   padding: 10px;
 }
 
+section {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 section img {
   height: 400px;
   width: 50%;
+}
+
+#Home {
+  padding-top: 100px;
 }
 
 .image-group {
   flex: 1;
   display: flex;
   margin: 0;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.topic {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff; /* Set color for text */
+}
+
+.button a {
+  position: absolute;
+  bottom: 20%; /* Adjust vertical position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .image-group div img {
@@ -64,8 +104,7 @@ section img {
 
 #About {
   color: white;
-  margin: 15px;
-  padding-left: 20px;
+  padding-top: 40px;
 }
 
 #About div p {
@@ -84,11 +123,12 @@ section img {
 }
 
 #Contact {
-  height: 100%;
-  width: 100%;
-  min-height: 100vh;
   color: white;
-  padding-left: 20px;
+  padding-top: 40px;
+}
+
+#Contact div {
+  padding-bottom: 20px;
 }
 
 #Contact div h2 {
