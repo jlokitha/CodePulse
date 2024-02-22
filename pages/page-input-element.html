@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;input&gt; Element</title>
+    <link rel="stylesheet" href="/css/page.css">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <h1>CodePulse</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact" style="margin-right: 50px;">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div>
+        <h1>HTML &lt;input&gt; Element</h1>
+      </div>
+
+      <div>
+        <article>
+          <p>
+            The <span>&lt;input&gt;</span> tag specifies an input field where the user can enter data.
+            The <span>&lt;input&gt;</span> element is the most important form element.
+            The <span>&lt;input&gt;</span> element can be displayed in several ways, depending on the type attribute. <br>
+            The different input types are as follows: <br>
+          </p>
+
+          <ul>
+            <li>&lt;input type="text"&gt; (default value)</li>
+            <li>&lt;input type="button"&gt;</li>
+            <li>&lt;input type="checkbox"&gt;</li>
+            <li>&lt;input type="color"&gt;</li>
+            <li>&lt;input type="date"&gt;</li>
+            <li>&lt;input type="datetime-local"&gt;</li>
+            <li>&lt;input type="email"&gt;</li>
+            <li>&lt;input type="file"&gt;</li>
+            <li>&lt;input type="hidden"&gt;</li>
+            <li>&lt;input type="image"&gt;</li>
+            <li>&lt;input type="month"&gt;</li>
+            <li>&lt;input type="number"&gt;</li>
+            <li>&lt;input type="radio"&gt;</li>
+            <li>&lt;input type="password"&gt;</li>
+            <li>&lt;input type="range"&gt;</li>
+            <li>&lt;input type="reset"&gt;</li>
+            <li>&lt;input type="search"&gt;</li>
+            <li>&lt;input type="submit"&gt;</li>
+            <li>&lt;input type="tel"&gt;</li>
+            <li>&lt;input type="time"&gt;</li>
+            <li>&lt;input type="url"&gt;</li>
+            <li>&lt;input type="week"&gt;</li>
+          </ul>
+
+        </article>
+
+        <img src="/assets/examples/<input>-example.png" alt="example photo of html <form> tag">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>accept</td>
+              <td>
+                file_extension <br>
+                audio/* <br>
+                video/* <br>
+                image/* <br>
+                media_type
+              </td>
+              <td>Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file")</td>
+            </tr>
+  
+            <tr>
+              <td>alt</td>
+              <td>text</td>
+              <td>Specifies an alternate text for images (only for type="image")</td>
+            </tr>
+            
+            <tr>
+              <td>autocomplete</td>
+              <td>
+                on <br>
+                off
+              </td>
+              <td>Specifies whether an &lt;input&gt; element should have autocomplete enabled</td>
+            </tr>
+  
+            <tr>
+              <td>autofocus</td>
+              <td>autofocus</td>
+              <td>Specifies that an &lt;input&gt; element should automatically get focus when the page loads</td>
+            </tr>
+  
+            <tr>
+              <td>checked</td>
+              <td>checked</td>
+              <td>Specifies that an &lt;input&gt; element should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+            </tr>
+  
+            <tr>
+              <td>dirname</td>
+              <td>inputname.dir</td>
+              <td>Specifies that the text direction will be submitted</td>
+            </tr>
+  
+            <tr>
+              <td>disabled</td>
+              <td>disabled</td>
+              <td>Specifies that an &lt;input&gt; element should be disabled</td>
+            </tr>
+  
+            <tr>
+              <td>form</td>
+              <td>form_id</td>
+              <td>Specifies the form the &lt;input&gt; element belongs to</td>
+            </tr>
+  
+            <tr>
+              <td>formaction</td>
+              <td>URL</td>
+              <td>Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>formenctype</td>
+              <td>
+                application/x-www-form-urlencoded <br>
+                multipart/form-data <br>
+                text/plain
+              </td>
+              <td>Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>formmethod</td>
+              <td>
+                get
+                post
+              </td>
+              <td>Defines the HTTP method for sending data to the action URL (for type="submit" and type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>formnovalidate</td>
+              <td>formnovalidate</td>
+              <td>Defines that form elements should not be validated when submitted</td>
+            </tr>
+  
+            <tr>
+              <td>formtarget</td>
+              <td>
+                _blank <br>
+                _self <br>
+                _parent <br>
+                _top <br>
+                framename
+              </td>
+              <td>Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>height</td>
+              <td>pixels</td>
+              <td>Specifies the height of an &lt;input&gt; element (only for type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>list</td>
+              <td>datalist_id</td>
+              <td>Refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>max</td>
+              <td>
+                number <br>
+                date
+              </td>
+              <td>Specifies the maximum value for an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>maxlength</td>
+              <td>number</td>
+              <td>	Specifies the maximum number of characters allowed in an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>min</td>
+              <td>
+                number <br>
+                date
+              </td>
+              <td>Specifies a minimum value for an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>minlength</td>
+              <td>number</td>
+              <td>Specifies the minimum number of characters required in an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>multiple</td>
+              <td>multiple</td>
+              <td>Specifies that a user can enter more than one value in an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>name</td>
+              <td>text</td>
+              <td>Specifies the name of an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>pattern</td>
+              <td>regexp</td>
+              <td>Specifies a regular expression that an &lt;input&gt; element's value is checked against</td>
+            </tr>
+  
+            <tr>
+              <td>placeholder</td>
+              <td>text</td>
+              <td>Specifies a short hint that describes the expected value of an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>popovertarget</td>
+              <td>element_id</td>
+              <td>Specifies which popover element to invoke (only for type="button")</td>
+            </tr>
+  
+            <tr>
+              <td>popovertargetaction</td>
+              <td>
+                hide <br>
+                show <br>
+                toggle
+              </td>
+              <td>Specifies what happens to the popover element when you click the button (only for type="button")</td>
+            </tr>
+  
+            <tr>
+              <td>readonly</td>
+              <td>readonly</td>
+              <td>Specifies that an input field is read-only</td>
+            </tr>
+  
+            <tr>
+              <td>required</td>
+              <td>required</td>
+              <td>Specifies that an input field must be filled out before submitting the form</td>
+            </tr>
+  
+            <tr>
+              <td>size</td>
+              <td>number</td>
+              <td>Specifies the width, in characters, of an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>src</td>
+              <td>URL</td>
+              <td>Specifies the URL of the image to use as a submit button (only for type="image")</td>
+            </tr>
+  
+            <tr>
+              <td>step</td>
+              <td>
+                number <br>
+                any
+              </td>
+              <td>Specifies the interval between legal numbers in an input field</td>
+            </tr>
+  
+            <tr>
+              <td>type</td>
+              <td>
+                button <br>
+                checkbox <br>
+                color <br>
+                date <br>
+                datetime-local <br>
+                email <br>
+                file <br>
+                hidden <br>
+                image <br>
+                month <br>
+                number <br>
+                password <br>
+                radio <br>
+                range <br>
+                reset <br>
+                search <br>
+                submit <br>
+                tel <br>
+                text <br>
+                time <br>
+                url <br>
+                week 
+              </td>
+              <td>Specifies the type &lt;input&gt; element to display</td>
+            </tr>
+  
+            <tr>
+              <td>value</td>
+              <td>text</td>
+              <td>Specifies the value of an &lt;input&gt; element</td>
+            </tr>
+  
+            <tr>
+              <td>width</td>
+              <td>pixels</td>
+              <td>Specifies the width of an &lt;input&gt; element (only for type="image")</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
