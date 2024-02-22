@@ -64,7 +64,7 @@ section h1 {
 
 .content img {
   height: 50%;
-  width: 70%;
+  width: 50%;
   padding: 10px;
 }
 
@@ -79,4 +79,8 @@ section h1 {
 
 .content table td {
   padding: 5px;
+}
+
+image {
+  width: 50px;
 }
