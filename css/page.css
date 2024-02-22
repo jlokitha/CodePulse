@@ -44,13 +44,43 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-.content {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 0%;
-  margin-top: 0%;
+section {
+  padding-top: 100px;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 40px;
+  color: white;
+  font-size: 17px;
 }
 
-img {
-  width: 500px;
+section h1 {
+  text-align: left;
+  margin-left: 0;
+}
+
+.content {
+  padding-top: 40px;
+}
+
+.content img {
+  height: 50%;
+  width: 50%;
+  padding: 10px;
+}
+
+.content span {
+  color: rgb(237, 102, 102);
+}
+
+.content table {
+  border: 1px solid grey;
+  width: 100%;
+}
+
+.content table td {
+  padding: 5px;
+}
+
+image {
+  width: 50px;
 }
