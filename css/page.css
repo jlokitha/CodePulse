@@ -14,6 +14,12 @@ header {
   width: 100%;
 }
 
+header img {
+  width: 50px;
+  height: 50px;
+  padding-left: 50px;
+}
+
 h1 {
   font-size: 40px; /* Reducing the font size of the heading */
   margin-left: 50px;
@@ -51,6 +57,7 @@ section {
   padding-bottom: 40px;
   color: white;
   font-size: 17px;
+  line-height: 25px;
 }
 
 section h1 {
@@ -60,27 +67,54 @@ section h1 {
 
 .content {
   padding-top: 40px;
+  border-bottom: 1px solid gray;
 }
 
 .content img {
   height: 50%;
-  width: 50%;
   padding: 10px;
 }
 
 .content span {
-  color: rgb(237, 102, 102);
+  color: rgb(253, 253, 133);
 }
 
 .content table {
   border: 1px solid grey;
   width: 100%;
+  border-collapse: collapse;
+}
+
+.content table th {
+  border: 1px solid grey;
 }
 
 .content table td {
   padding: 5px;
+  border: 1px solid grey;
 }
 
-image {
+footer {
+  background: black;
+  color: white;
+  width: 100%;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+}
+
+footer p {
+  padding-left: 67%;
+  padding-top: 50px;
+  line-height: 30px;
+}
+
+footer p span {
+  color: rgb(174, 174, 174);
+}
+
+footer img {
   width: 50px;
+  height: 50px;
+  padding-left: 50px;
 }
