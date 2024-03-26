@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables</title>
-    <link rel="stylesheet" href="/css/page.css">
-    <link rel="icon" href="/assets/images/logo-background-black.png">
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/page.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo-background-black.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -14,13 +35,17 @@
         <h1>CodePulse</h1>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="/index.html#Home">Home</a></li>
-          <li><a href="/index.html#About">About</a></li>
-          <li><a href="/index.html#Contact" style="margin-right: 50px;">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-logo"></i>
+      </div>
     </header>
 
     <section>
@@ -28,28 +53,45 @@
         <h1>HTML Tables</h1>
       </div>
 
-      <div class="content" style="padding-top: 15px;">
+      <div class="content" style="padding-top: 15px">
         <h2>HTML &lt;table&gt; Tag</h2>
 
         <article>
           <p>
-            <br>
+            <br />
             The <span>&lt;table&gt;</span> tag defines an HTML table.
-            <br><br>
-            An HTML table consists of one <span>&lt;table&gt;</span> element and one or more <span>&lt;tr&gt;</span>, <span>&lt;th&gt;</span>, and <span>&lt;td&gt;</span> elements.
-            <br><br>
-            The <span>&lt;tr&gt;</span> element defines a table row, the <span>&lt;th&gt;</span> element defines a table header, and the <span>&lt;td&gt;</span> element defines a table cell.
-            <br><br>
-            An HTML table may also include <span>&lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt;&lt;/tfoot&gt;</span>, and <span>&lt;tbody&gt;</span> elements.
-            <br><br>
+            <br /><br />
+            An HTML table consists of one <span>&lt;table&gt;</span> element and
+            one or more <span>&lt;tr&gt;</span>, <span>&lt;th&gt;</span>, and
+            <span>&lt;td&gt;</span> elements. <br /><br />
+            The <span>&lt;tr&gt;</span> element defines a table row, the
+            <span>&lt;th&gt;</span> element defines a table header, and the
+            <span>&lt;td&gt;</span> element defines a table cell. <br /><br />
+            An HTML table may also include
+            <span
+              >&lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;,
+              &lt;tfoot&gt;&lt;/tfoot&gt;</span
+            >, and <span>&lt;tbody&gt;</span> elements. <br /><br />
           </p>
         </article>
 
-        <img src="/assets/examples/<table>-examples.png" alt="example photo of html <table> tag" width="500px" height="500px">
+        <img
+          src="/assets/examples/<table>-examples.png"
+          alt="example photo of html <table> tag"
+          width="500px"
+          height="500px"
+        />
 
-        <p>Most browsers will display the &lt;table&gt;element with the following default values:</p>
+        <p>
+          Most browsers will display the &lt;table&gt;element with the following
+          default values:
+        </p>
 
-        <img src="/assets/examples/<table>-default-css-examples.png" alt="example photo of html <table> tag's default css" width="600px">
+        <img
+          src="/assets/examples/<table>-default-css-examples.png"
+          alt="example photo of html <table> tag's default css"
+          width="600px"
+        />
       </div>
 
       <div class="content">
@@ -57,11 +99,16 @@
 
         <article>
           <p>
-            The <span>colspan</span> attribute defines the number of columns a cell should span.
+            The <span>colspan</span> attribute defines the number of columns a
+            cell should span.
           </p>
         </article>
 
-        <img src="/assets/examples/colspan-examples.png" alt="example photo of html colspan attribute" width="600px">
+        <img
+          src="/assets/examples/colspan-examples.png"
+          alt="example photo of html colspan attribute"
+          width="600px"
+        />
       </div>
 
       <div class="content">
@@ -69,24 +116,29 @@
 
         <article>
           <p>
-            The <span>rowspan</span> attribute specifies the number of rows a cell should span.
+            The <span>rowspan</span> attribute specifies the number of rows a
+            cell should span.
           </p>
         </article>
 
-        <img src="/assets/examples/rowspan-examples.png" alt="example photo of html rowspan attribute" width="1000px">
+        <img
+          src="/assets/examples/rowspan-examples.png"
+          alt="example photo of html rowspan attribute"
+          width="1000px"
+        />
       </div>
     </section>
 
     <footer>
-      <img src="/assets/images/logo-white.png" alt="CodePulse logo">
+      <div class="logo-container">
+        <img src="/assets/images/logo-white.png" alt="CodePulse logo" />
 
-      <div>
         <h1>CodePulse</h1>
       </div>
 
       <p>
-        ljanindulokitha@gmail.com <br>
-        Copyright &copy:2024 Designed by <span>LOKITHA</span>
+        ljanindulokitha@gmail.com <br />
+        Copyright &copy:2024 Designed by Lokitha
       </p>
     </footer>
   </body>
