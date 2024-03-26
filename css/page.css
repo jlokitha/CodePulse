@@ -3,53 +3,6 @@ body {
   margin: 0%;
 }
 
-header {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-  padding-left: 50px;
-}
-
-h1 {
-  font-size: 40px; /* Reducing the font size of the heading */
-  margin-left: 50px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  text-align: right;
-}
-
-nav ul li {
-  display: inline;
-  margin-left: 30px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  border: 2px solid transparent; /* Adding transparent border initially */
-  transition: border-color 0.3s; /* Adding transition for smooth effect */
-  border-radius: 10px;
-}
-
-nav ul li a:hover {
-  border-color: white; /* Changing border color on hover */
-  padding: 10px;
-}
-
 section {
   padding-top: 100px;
   padding-left: 150px;
@@ -92,29 +45,4 @@ section h1 {
 .content table td {
   padding: 5px;
   border: 1px solid grey;
-}
-
-footer {
-  background: black;
-  color: white;
-  width: 100%;
-  align-items: center;
-  z-index: 1000;
-  display: flex;
-}
-
-footer p {
-  padding-left: 67%;
-  padding-top: 50px;
-  line-height: 30px;
-}
-
-footer p span {
-  color: rgb(174, 174, 174);
-}
-
-footer img {
-  width: 50px;
-  height: 50px;
-  padding-left: 50px;
 }

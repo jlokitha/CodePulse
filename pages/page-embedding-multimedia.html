@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Embedding Mutimedia</title>
-    <link rel="stylesheet" href="/css/page.css">
-    <link rel="icon" href="/assets/images/logo-background-black.png">
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/page.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo-background-black.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -14,13 +35,17 @@
         <h1>CodePulse</h1>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="/index.html#Home">Home</a></li>
-          <li><a href="/index.html#About">About</a></li>
-          <li><a href="/index.html#Contact" style="margin-right: 50px;">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-logo"></i>
+      </div>
     </header>
 
     <section>
@@ -28,117 +53,144 @@
         <h1>Embedding Multimedia</h1>
       </div>
 
-      <div class="content" style="padding-top: 15px;">
+      <div class="content" style="padding-top: 15px">
         <h2>HTML &lt;img&gt; Tag</h2>
 
         <article>
           <p>
-            The <span>&lt;img&gt;</span> tag is used to embed an image in an HTML page.
-            <br><br>
-            Images are not technically inserted into a web page; images are linked to web pages. The <span>&lt;img&gt;</span> tag creates a holding space for the referenced image.
-            <br><br>
+            The <span>&lt;img&gt;</span> tag is used to embed an image in an
+            HTML page. <br /><br />
+            Images are not technically inserted into a web page; images are
+            linked to web pages. The <span>&lt;img&gt;</span> tag creates a
+            holding space for the referenced image. <br /><br />
             The <span>&lt;img&gt;</span> tag has two required attributes:
-            <br><br>
+            <br /><br />
           </p>
 
           <ul>
             <li>src - Specifies the path to the image</li>
-            <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+            <li>
+              alt - Specifies an alternate text for the image, if the image for
+              some reason cannot be displayed
+            </li>
           </ul>
         </article>
 
-        <img src="/assets/examples/<img>-examples.png" alt="example photo of html <img> tag" width="1000px">
+        <img
+          src="/assets/examples/<img>-examples.png"
+          alt="example photo of html <img> tag"
+          width="1000px"
+        />
 
-          <h3>Attributes</h3>
-        
-          <div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Attribute</th>
-                  <th>Value</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-    
-              <tbody>
-                <tr>
-                  <td>alt</td>
-                  <td>text</td>
-                  <td>Specifies an alternate text for an image</td>
-                </tr>
-    
-                <tr>
-                  <td>crossorigin</td>
-                  <td>anonymous <br> use-credentials</td>
-                  <td>Allow images from third-party sites that allow cross-origin access to be used with canvas</td>
-                </tr>
-    
-                <tr>
-                  <td>height</td>
-                  <td>pixels</td>
-                  <td>Specifies the height of an image</td>
-                </tr>
-    
-                <tr>
-                  <td>ismap</td>
-                  <td>ismap</td>
-                  <td>Specifies an image as a server-side image map</td>
-                </tr>
-    
-                <tr>
-                  <td>loading</td>
-                  <td>eager <br> lazy</td>
-                  <td>Specifies whether a browser should load an image immediately or to defer loading of images until some conditions are met</td>
-                </tr>
-    
-                <tr>
-                  <td>longdesc</td>
-                  <td>URL</td>
-                  <td>Specifies a URL to a detailed description of an image</td>
-                </tr>
+        <h3>Attributes</h3>
 
-                <tr>
-                  <td>referrerpolicy</td>
-                  <td>
-                    no-referrer <br> no-referrer-when-downgrade <br>origin
-                    <br> origin-when-cross-origin <br> unsafe-url
-                  </td>
-                  <td>Specifies which referrer information to use when fetching an image</td>
-                </tr>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+                <th>Description</th>
+              </tr>
+            </thead>
 
-                <tr>
-                  <td>sizes</td>
-                  <td>sizes</td>
-                  <td>Specifies image sizes for different page layouts</td>
-                </tr>
+            <tbody>
+              <tr>
+                <td>alt</td>
+                <td>text</td>
+                <td>Specifies an alternate text for an image</td>
+              </tr>
 
-                <tr>
-                  <td>src</td>
-                  <td>URL</td>
-                  <td>Specifies the path to the image</td>
-                </tr>
+              <tr>
+                <td>crossorigin</td>
+                <td>
+                  anonymous <br />
+                  use-credentials
+                </td>
+                <td>
+                  Allow images from third-party sites that allow cross-origin
+                  access to be used with canvas
+                </td>
+              </tr>
 
-                <tr>
-                  <td>srcset</td>
-                  <td>URL-list</td>
-                  <td>Specifies a list of image files to use in different situations</td>
-                </tr>
+              <tr>
+                <td>height</td>
+                <td>pixels</td>
+                <td>Specifies the height of an image</td>
+              </tr>
 
-                <tr>
-                  <td>usemap</td>
-                  <td>#mapname</td>
-                  <td>Specifies an image as a client-side image map</td>
-                </tr>
+              <tr>
+                <td>ismap</td>
+                <td>ismap</td>
+                <td>Specifies an image as a server-side image map</td>
+              </tr>
 
-                <tr>
-                  <td>width</td>
-                  <td>pixels</td>
-                  <td>Specifies the width of an image</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              <tr>
+                <td>loading</td>
+                <td>
+                  eager <br />
+                  lazy
+                </td>
+                <td>
+                  Specifies whether a browser should load an image immediately
+                  or to defer loading of images until some conditions are met
+                </td>
+              </tr>
+
+              <tr>
+                <td>longdesc</td>
+                <td>URL</td>
+                <td>Specifies a URL to a detailed description of an image</td>
+              </tr>
+
+              <tr>
+                <td>referrerpolicy</td>
+                <td>
+                  no-referrer <br />
+                  no-referrer-when-downgrade <br />origin <br />
+                  origin-when-cross-origin <br />
+                  unsafe-url
+                </td>
+                <td>
+                  Specifies which referrer information to use when fetching an
+                  image
+                </td>
+              </tr>
+
+              <tr>
+                <td>sizes</td>
+                <td>sizes</td>
+                <td>Specifies image sizes for different page layouts</td>
+              </tr>
+
+              <tr>
+                <td>src</td>
+                <td>URL</td>
+                <td>Specifies the path to the image</td>
+              </tr>
+
+              <tr>
+                <td>srcset</td>
+                <td>URL-list</td>
+                <td>
+                  Specifies a list of image files to use in different situations
+                </td>
+              </tr>
+
+              <tr>
+                <td>usemap</td>
+                <td>#mapname</td>
+                <td>Specifies an image as a client-side image map</td>
+              </tr>
+
+              <tr>
+                <td>width</td>
+                <td>pixels</td>
+                <td>Specifies the width of an image</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="content">
@@ -146,18 +198,25 @@
 
         <article>
           <p>
-            The <span>&lt;audio&gt;</span> tag is used to embed sound content in a document, such as music or other audio streams.
-            <br><br>
-            The <span>&lt;audio&gt;</span> tag contains one or more <span>&lt;audio&gt;</span> tags with different audio sources. The browser will choose the first source it supports.
-            <br><br>
-            The text between the <span>&lt;audio&gt;</span> and <span>&lt;audio&gt;</span> tags will only be displayed in browsers that do not support the <span>&lt;audio&gt;</span> element.
-            <br><br>
+            The <span>&lt;audio&gt;</span> tag is used to embed sound content in
+            a document, such as music or other audio streams. <br /><br />
+            The <span>&lt;audio&gt;</span> tag contains one or more
+            <span>&lt;audio&gt;</span> tags with different audio sources. The
+            browser will choose the first source it supports. <br /><br />
+            The text between the <span>&lt;audio&gt;</span> and
+            <span>&lt;audio&gt;</span> tags will only be displayed in browsers
+            that do not support the <span>&lt;audio&gt;</span> element.
+            <br /><br />
             There are three supported audio formats in HTML: MP3, WAV, and OGG.
-            <br><br>
+            <br /><br />
           </p>
         </article>
 
-        <img src="/assets/examples/<audio>-example.png" alt="example photo of html <audio> tag" width="800px">
+        <img
+          src="/assets/examples/<audio>-example.png"
+          alt="example photo of html <audio> tag"
+          width="800px"
+        />
 
         <h3>Attributes</h3>
 
@@ -175,19 +234,28 @@
               <tr>
                 <td>autoplay</td>
                 <td>autoplay</td>
-                <td>Specifies that the audio will start playing as soon as it is ready</td>
+                <td>
+                  Specifies that the audio will start playing as soon as it is
+                  ready
+                </td>
               </tr>
 
               <tr>
                 <td>controls</td>
                 <td>controls</td>
-                <td>Specifies that audio controls should be displayed (such as a play/pause button etc)</td>
+                <td>
+                  Specifies that audio controls should be displayed (such as a
+                  play/pause button etc)
+                </td>
               </tr>
 
               <tr>
                 <td>loop</td>
                 <td>loop</td>
-                <td>Specifies that the audio will start over again, every time it is finished</td>
+                <td>
+                  Specifies that the audio will start over again, every time it
+                  is finished
+                </td>
               </tr>
 
               <tr>
@@ -198,8 +266,15 @@
 
               <tr>
                 <td>preload</td>
-                <td>auto <br> metadata <br> none</td>
-                <td>Specifies if and how the author thinks the audio should be loaded when the page loads</td>
+                <td>
+                  auto <br />
+                  metadata <br />
+                  none
+                </td>
+                <td>
+                  Specifies if and how the author thinks the audio should be
+                  loaded when the page loads
+                </td>
               </tr>
 
               <tr>
@@ -217,18 +292,26 @@
 
         <article>
           <p>
-            The <span>&lt;video&gt;</span> tag is used to embed video content in a document, such as a movie clip or other video streams.
-            <br><br>
-            The <span>&lt;video&gt;</span> tag contains one or more <span>&lt;source&gt;</span> tags with different video sources. The browser will choose the first source it supports.
-            <br><br>
-            The text between the <span>&lt;video&gt;</span> and <span>&lt;/video&gt;</span> tags will only be displayed in browsers that do not support the <span>&lt;video&gt;</span> element.
-            <br><br>
+            The <span>&lt;video&gt;</span> tag is used to embed video content in
+            a document, such as a movie clip or other video streams.
+            <br /><br />
+            The <span>&lt;video&gt;</span> tag contains one or more
+            <span>&lt;source&gt;</span> tags with different video sources. The
+            browser will choose the first source it supports. <br /><br />
+            The text between the <span>&lt;video&gt;</span> and
+            <span>&lt;/video&gt;</span> tags will only be displayed in browsers
+            that do not support the <span>&lt;video&gt;</span> element.
+            <br /><br />
             There are three supported video formats in HTML: MP4, WebM, and OGG.
-            <br><br>
+            <br /><br />
           </p>
         </article>
 
-        <img src="/assets/examples/<video>-example.png" alt="example photo of html <video> tag" width="900px">
+        <img
+          src="/assets/examples/<video>-example.png"
+          alt="example photo of html <video> tag"
+          width="900px"
+        />
 
         <h3>Attributes</h3>
 
@@ -246,13 +329,19 @@
               <tr>
                 <td>autoplay</td>
                 <td>autoplay</td>
-                <td>Specifies that the video will start playing as soon as it is ready</td>
+                <td>
+                  Specifies that the video will start playing as soon as it is
+                  ready
+                </td>
               </tr>
 
               <tr>
                 <td>controls</td>
                 <td>controls</td>
-                <td>Specifies that video controls should be displayed (such as a play/pause button etc).</td>
+                <td>
+                  Specifies that video controls should be displayed (such as a
+                  play/pause button etc).
+                </td>
               </tr>
 
               <tr>
@@ -264,25 +353,40 @@
               <tr>
                 <td>loop</td>
                 <td>loop</td>
-                <td>Specifies that the video will start over again, every time it is finished</td>
+                <td>
+                  Specifies that the video will start over again, every time it
+                  is finished
+                </td>
               </tr>
 
               <tr>
                 <td>muted</td>
                 <td>muted</td>
-                <td>Specifies that the audio output of the video should be muted</td>
+                <td>
+                  Specifies that the audio output of the video should be muted
+                </td>
               </tr>
 
               <tr>
                 <td>poster</td>
                 <td>URL</td>
-                <td>Specifies an image to be shown while the video is downloading, or until the user hits the play button</td>
+                <td>
+                  Specifies an image to be shown while the video is downloading,
+                  or until the user hits the play button
+                </td>
               </tr>
 
               <tr>
                 <td>preload</td>
-                <td>auto <br> metadata <br> none</td>
-                <td>Specifies if and how the author thinks the video should be loaded when the page loads</td>
+                <td>
+                  auto <br />
+                  metadata <br />
+                  none
+                </td>
+                <td>
+                  Specifies if and how the author thinks the video should be
+                  loaded when the page loads
+                </td>
               </tr>
 
               <tr>
@@ -307,17 +411,23 @@
         <article>
           <p>
             The <span>&lt;iframe&gt;</span> tag specifies an inline frame.
-            <br><br>
-            An inline frame is used to embed another document within the current HTML document.
-            <br><br>
-            Use CSS to style the <span>&lt;iframe&gt;</span>. 
-            <br><br>
-            It is a good practice to always include a title attribute for the <span>&lt;iframe&gt;</span>. This is used by screen readers to read out what the content of the <span>&lt;iframe&gt;</span> is.
-            <br><br>
+            <br /><br />
+            An inline frame is used to embed another document within the current
+            HTML document.
+            <br /><br />
+            Use CSS to style the <span>&lt;iframe&gt;</span>. <br /><br />
+            It is a good practice to always include a title attribute for the
+            <span>&lt;iframe&gt;</span>. This is used by screen readers to read
+            out what the content of the <span>&lt;iframe&gt;</span> is.
+            <br /><br />
           </p>
         </article>
 
-        <img src="/assets/examples/<iframe>-example.png" alt="example photo of html <iframe> tag" width="1200px">
+        <img
+          src="/assets/examples/<iframe>-example.png"
+          alt="example photo of html <iframe> tag"
+          width="1200px"
+        />
 
         <h3>Attributes</h3>
 
@@ -339,77 +449,113 @@
 
               <tr>
                 <td>allowfullscreen</td>
-                <td>true <br> false</td>
-                <td>Set to true if the &lt;iframe&gt; can activate fullscreen mode by calling the requestFullscreen() method</td>
+                <td>
+                  true <br />
+                  false
+                </td>
+                <td>
+                  Set to true if the &lt;iframe&gt; can activate fullscreen mode
+                  by calling the requestFullscreen() method
+                </td>
               </tr>
 
               <tr>
                 <td>allowpaymentrequest</td>
-                <td>true <br> false</td>
-                <td>Set to true if a cross-origin &lt;iframe&gt; should be allowed to invoke the Payment Request API</td>
+                <td>
+                  true <br />
+                  false
+                </td>
+                <td>
+                  Set to true if a cross-origin &lt;iframe&gt; should be allowed
+                  to invoke the Payment Request API
+                </td>
               </tr>
 
               <tr>
                 <td>height</td>
                 <td>pixels</td>
-                <td>Specifies the height of an &lt;iframe&gt;. Default height is 150 pixels</td>
+                <td>
+                  Specifies the height of an &lt;iframe&gt;. Default height is
+                  150 pixels
+                </td>
               </tr>
 
               <tr>
                 <td>loading</td>
-                <td>eager <br> lazy</td>
-                <td>Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met</td>
+                <td>
+                  eager <br />
+                  lazy
+                </td>
+                <td>
+                  Specifies whether a browser should load an iframe immediately
+                  or to defer loading of iframes until some conditions are met
+                </td>
               </tr>
 
               <tr>
                 <td>name</td>
-                <td>	text</td>
+                <td>text</td>
                 <td>Specifies the name of an &lt;iframe&gt;</td>
               </tr>
 
               <tr>
                 <td>referrerpolicy</td>
                 <td>
-                  no-referrer <br>
-                  no-referrer-when-downgrade <br>
-                  origin <br>
-                  origin-when-cross-origin <br>
-                  same-origin <br>
-                  strict-origin-when-cross-origin <br>
+                  no-referrer <br />
+                  no-referrer-when-downgrade <br />
+                  origin <br />
+                  origin-when-cross-origin <br />
+                  same-origin <br />
+                  strict-origin-when-cross-origin <br />
                   unsafe-url
                 </td>
-                <td>Specifies which referrer information to send when fetching the iframe</td>
+                <td>
+                  Specifies which referrer information to send when fetching the
+                  iframe
+                </td>
               </tr>
 
               <tr>
                 <td>sandbox</td>
                 <td>
-                  allow-forms <br>
-                  allow-pointer-lock <br>
-                  allow-popups <br>
-                  allow-same-origin <br>
-                  allow-scripts <br>
+                  allow-forms <br />
+                  allow-pointer-lock <br />
+                  allow-popups <br />
+                  allow-same-origin <br />
+                  allow-scripts <br />
                   allow-top-navigation
                 </td>
-                <td>Enables an extra set of restrictions for the content in an &lt;iframe&gt;</td>
+                <td>
+                  Enables an extra set of restrictions for the content in an
+                  &lt;iframe&gt;
+                </td>
               </tr>
 
               <tr>
                 <td>src</td>
                 <td>URL</td>
-                <td>Specifies the address of the document to embed in the &lt;iframe&gt;</td>
+                <td>
+                  Specifies the address of the document to embed in the
+                  &lt;iframe&gt;
+                </td>
               </tr>
 
               <tr>
                 <td>srcdoc</td>
                 <td>HTML_code</td>
-                <td>Specifies the HTML content of the page to show in the &lt;iframe&gt;</td>
+                <td>
+                  Specifies the HTML content of the page to show in the
+                  &lt;iframe&gt;
+                </td>
               </tr>
 
               <tr>
                 <td>width</td>
                 <td>pixels</td>
-                <td>Specifies the width of an &lt;iframe&gt;. Default width is 300 pixels</td>
+                <td>
+                  Specifies the width of an &lt;iframe&gt;. Default width is 300
+                  pixels
+                </td>
               </tr>
             </tbody>
           </table>
@@ -418,15 +564,15 @@
     </section>
 
     <footer>
-      <img src="/assets/images/logo-white.png" alt="CodePulse logo">
+      <div class="logo-container">
+        <img src="/assets/images/logo-white.png" alt="CodePulse logo" />
 
-      <div>
         <h1>CodePulse</h1>
       </div>
 
       <p>
-        ljanindulokitha@gmail.com <br>
-        Copyright &copy:2024 Designed by <span>LOKITHA</span>
+        ljanindulokitha@gmail.com <br />
+        Copyright &copy:2024 Designed by Lokitha
       </p>
     </footer>
   </body>

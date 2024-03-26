@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Introduction</title>
-    <link rel="stylesheet" href="/css/page.css">
-    <link rel="icon" href="/assets/images/logo-background-black.png">
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/page.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo-background-black.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
@@ -14,13 +35,17 @@
         <h1>CodePulse</h1>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="/index.html#Home">Home</a></li>
-          <li><a href="/index.html#About">About</a></li>
-          <li><a href="page-input-element.html#Contact" style="margin-right: 50px;">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="navbar">
+        <nav>
+          <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-logo"></i>
+      </div>
     </header>
 
     <section>
@@ -28,7 +53,7 @@
         <h1>Introduction of HTML</h1>
       </div>
 
-      <div class="content" style="padding-top: 15px;">
+      <div class="content" style="padding-top: 15px">
         <h2>What is HTML?</h2>
 
         <article>
@@ -38,7 +63,10 @@
             <li>HTML describes the structure of a Web page</li>
             <li>HTML consists of a series of elements</li>
             <li>HTML elements tell the browser how to display the content</li>
-            <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+            <li>
+              HTML elements label pieces of content such as "this is a heading",
+              "this is a paragraph", "this is a link", etc.
+            </li>
           </ul>
         </article>
       </div>
@@ -46,7 +74,12 @@
       <div class="content">
         <h2>Simple HTML document</h2>
 
-        <img src="/assets/examples/html-introduction.png" alt="simple html document" width="500px" height="500px">
+        <img
+          src="/assets/examples/html-introduction.png"
+          alt="simple html document"
+          width="500px"
+          height="500px"
+        />
       </div>
 
       <div class="content">
@@ -54,11 +87,28 @@
 
         <article>
           <ul>
-            <li>The <span>&lt;!DOCTYPE html&gt;</span> declaration defines that this document is an HTML5 document</li>
-            <li>The <span>&lt;html&gt;</span> element is the root element of an HTML page</li>
-            <li>The <span>&lt;head&gt;</span> element contains meta information about the HTML page</li>
-            <li>The <span>&lt;title&gt;</span> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)</li>
-            <li>The <span>&lt;body&gt;</span> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+            <li>
+              The <span>&lt;!DOCTYPE html&gt;</span> declaration defines that
+              this document is an HTML5 document
+            </li>
+            <li>
+              The <span>&lt;html&gt;</span> element is the root element of an
+              HTML page
+            </li>
+            <li>
+              The <span>&lt;head&gt;</span> element contains meta information
+              about the HTML page
+            </li>
+            <li>
+              The <span>&lt;title&gt;</span> element specifies a title for the
+              HTML page (which is shown in the browser's title bar or in the
+              page's tab)
+            </li>
+            <li>
+              The <span>&lt;body&gt;</span> element defines the document's body,
+              and is a container for all the visible contents, such as headings,
+              paragraphs, images, hyperlinks, tables, lists, etc.
+            </li>
             <li>The <span>&lt;h1&gt;</span> element defines a large heading</li>
             <li>The <span>&lt;p&gt;</span> element defines a paragraph</li>
           </ul>
@@ -70,14 +120,15 @@
 
         <article>
           <p>
-            An HTML element is defined by a start tag, some content, and an end tag:
-            <br><br>
-            <span>&lt;tagname&gt;</span> Content goes here... <span>&lt;/tagname&gt;</span>
-            <br><br>
+            An HTML element is defined by a start tag, some content, and an end
+            tag:
+            <br /><br />
+            <span>&lt;tagname&gt;</span> Content goes here...
+            <span>&lt;/tagname&gt;</span> <br /><br />
             The HTML element is everything from the start tag to the end tag:
-            <br><br>
+            <br /><br />
             <span>&lt;h1&gt;</span>My First Heading <span>&lt;/h1&gt;</span>
-            <br><br>
+            <br /><br />
             <span>&lt;p&gt;</span>My first paragraph. <span>&lt;/p&gt;</span>
           </p>
         </article>
@@ -88,38 +139,48 @@
 
         <article>
           <p>
-            The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
-            <br><br>
-            A browser does not display the HTML tags, but uses them to determine how to display the document:       
+            The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to
+            read HTML documents and display them correctly.
+            <br /><br />
+            A browser does not display the HTML tags, but uses them to determine
+            how to display the document:
           </p>
         </article>
 
-        <img src="/assets/examples/web-browser.png" alt="photo of web browser" width="600px" height="370px">
+        <img
+          src="/assets/examples/web-browser.png"
+          alt="photo of web browser"
+          width="600px"
+          height="370px"
+        />
       </div>
 
       <div class="content">
         <h2>HTML Page Structure</h2>
 
         <article>
-          <p>
-            Below is a visualization of an HTML page structure:
-          </p>
+          <p>Below is a visualization of an HTML page structure:</p>
         </article>
 
-        <img src="/assets/examples/html-page-structure.jpg" alt="page structure of html" width="600px" height="400px">
+        <img
+          src="/assets/examples/html-page-structure.jpg"
+          alt="page structure of html"
+          width="600px"
+          height="400px"
+        />
       </div>
     </section>
 
     <footer>
-      <img src="/assets/images/logo-white.png" alt="CodePulse logo">
+      <div class="logo-container">
+        <img src="/assets/images/logo-white.png" alt="CodePulse logo" />
 
-      <div>
         <h1>CodePulse</h1>
       </div>
 
       <p>
-        ljanindulokitha@gmail.com <br>
-        Copyright &copy:2024 Designed by <span>LOKITHA</span>
+        ljanindulokitha@gmail.com <br />
+        Copyright &copy:2024 Designed by Lokitha
       </p>
     </footer>
   </body>
