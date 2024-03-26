@@ -1,241 +1,114 @@
-body {
-  margin: 0%;
-  background-color: rgb(49, 49, 49);
+* {
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: rgb(36, 33, 33);
+}
+
+/* CSS for header */
 
 header {
   background-color: black;
-  color: white;
+  padding: 20px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 1000;
-  width: 100%;
-}
 
-header img {
-  width: 50px;
-  height: 50px;
-  padding-left: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 h1 {
-  font-size: 40px; /* Reducing the font size of the heading */
-  margin-left: 50px;
+  color: white;
+  font-size: 3rem;
+}
+
+#navbar {
+  display: flex;
+}
+
+a {
+  color: white;
+  font-size: 1.3rem;
+  text-decoration: none;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
-  text-align: right;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
-  margin-left: 30px;
+  margin-right: 25px;
+  list-style: none;
 }
 
-nav ul li a {
+#menu-logo {
   color: white;
-  text-decoration: none;
-  font-size: 25px;
-  border: 2px solid transparent; /* Adding transparent border initially */
-  transition: border-color 0.3s; /* Adding transition for smooth effect */
-  border-radius: 10px;
+  font-size: 2.2rem;
+  margin: 0 20px;
+  display: none;
 }
 
-nav ul li a:hover {
-  border-color: white; /* Changing border color on hover */
-  padding: 10px;
-}
+/* CSS for sections */
 
 section {
-  padding-left: 100px;
-  padding-right: 100px;
-  line-height: 25px;
-}
-
-section img {
-  height: 400px;
-  width: 50%;
-}
-
-#Home {
-  padding-top: 100px;
-  background: rgb(36, 33, 33);
-}
-
-.image-group {
-  flex: 1;
-  display: flex;
-  margin: 0;
-}
-
-.container {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
-
-.topic {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: white; /* Set color for text */
-  white-space: nowrap; /* Prevent text from wrapping onto multiple lines */
-  z-index: 1;
-}
-
-.description {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: white; /* Set color for text */
-  text-align: center;
-  z-index: 1;
-}
-
-.button a {
-  position: absolute;
-  bottom: 20%; /* Adjust vertical position as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 18px;
-  z-index: 1;
-}
-
-.button a:hover {
-  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.698); /* Add a drop shadow on hover */
-}
-
-.image-group div img {
-  width: 100%;
-  height: auto;
-}
-
-.image-group div img.top-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1; /* Place the second image on top of the first one */
-}
-
-.image-group div:not(:last-child) {
-  margin-right: 4px; /* Add margin between images, except for the last one */
-}
-
-#About {
-  color: white;
-  padding-bottom: 40px;
-}
-
-#About div p {
-  font-size: 20px;
-}
-
-#About div ul li {
-  font-size: 20px;
-}
-
-#About div h2 {
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 7px 20px;
-  display: inline-block;
-}
-
-#Contact {
-  color: white;
-  padding-bottom: 40px;
-  background: rgb(36, 33, 33);
-}
-
-#Contact div {
+  max-width: 100%;
+  padding: 0px 5%;
   padding-bottom: 20px;
 }
 
-#Contact div h2 {
-  border: 2px solid white;
-  border-radius: 30px;
-  padding: 7px 20px;
-  display: inline-block;
-}
-
-#Contact div form {
-  position: relative;
-}
-
-#Contact div form input,
-form textarea {
-  width: 50%;
-  padding: 17px;
-  border: none;
-  outline: none;
-  background: #191919;
-  color: #fff;
-  font-size: 1.1rem;
-  margin-bottom: 0.7rem;
-  border-radius: 10px;
-}
-
-#Contact div form textarea {
-  resize: none;
-  height: 200px;
-}
-
-#Contact div form .btn {
-  display: inline-block;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  width: 220px;
-  transition: ease .20s;
-  cursor: pointer;
-}
-
-#Contact div form .btn:hover {
-  border: 2px solid #191919;
-  background: rgb(102, 102, 102);
-  transform: scale(1.1);
-}
+/* CSS for footer */
 
 footer {
   background: black;
   color: white;
-  width: 100%;
-  align-items: center;
-  z-index: 1000;
+  max-width: 100%;
+  padding: 5px;
+
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-footer p {
-  padding-left: 67%;
-  padding-top: 50px;
-  line-height: 30px;
-}
-
-footer p span {
-  color: rgb(174, 174, 174);
+.logo-container {
+  display: flex;
+  align-items: center;
 }
 
 footer img {
-  width: 50px;
-  height: 50px;
-  padding-left: 50px;
+  width: 6%;
+  margin: 20px 20px;
+}
+
+footer p {
+  width: max-content;
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+}
+
+/* 0px -> 576px */
+@media screen and (max-width: 576px) {
+  #navbar nav {
+    display: none;
+  }
+
+  #menu-logo {
+    display: block;
+  }
+
+  footer img {
+    width: 12%;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
 }
