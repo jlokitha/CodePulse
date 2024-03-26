@@ -1,154 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodePulse</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/assets/images/logo-background-black.png">
-  </head>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/index.css" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="icon"
+      href="/assets/images/logo-background-black.png"
+      type="image/x-icon"
+    />
+  </head>
   <body>
     <header>
       <div>
         <h1>CodePulse</h1>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#Contact" style="margin-right: 50px;">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <section id="Home">
-      <div class="image-group" style="width: 100%;">
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="html photo with yellow background">
-          <img src="/assets/images/transparent.png" alt="" class="top-image">
-          <div class="topic"><h2>HTML Introduction</h2></div>
-          <div class="description"><p>Introduction to HTML</p></div>
-          <nav class="button"><a href="/pages/page-html-introduction.html" target="_blank">READ IT</a></nav>
-        </div>
-
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent.png" alt="" class="top-image">
-          <div class="topic"><h2>Text Semantics</h2></div>
-          <div class="description"><p>Orverview of HTML tags that used with paragraph</p></div>
-          <nav class="button"><a href="/pages/page-text-semantics.html" target="_blank">READ IT</a></nav>
-        </div>
-      </div>
-
-      <div class="image-group">
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>HTML Lists</h2></div>
-          <div class="description"><p>Overview of HTML List and differences</p></div>
-          <nav class="button"><a href="/pages/page-lists.html" target="_blank">READ IT</a></nav>
-        </div>
-
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>Embedding Multimedia</h2></div>
-          <div class="description"><p>How to embedded multimedia into web sites</p></div>
-          <nav class="button"><a href="/pages/page-embedding-multimedia.html" target="_blank">READ IT</a></nav>
-        </div>
-
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>HTML Tables</h2></div>
-          <div class="description"><p>Overview of HTML tables</p></div>
-          <nav class="button"><a href="/pages/page-html-tables.html" target="_blank">READ IT</a></nav>
-        </div>
-      </div>
-
-      <div class="image-group">
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>HTML Form</h2></div>
-          <div class="description"><p>Overview of HTML form</p></div>
-          <nav class="button"><a href="/pages/page-html-form.html" target="_blank">READ IT</a></nav>
-        </div>
-
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>HTML &lt;input&gt; Element</h2></div>
-          <div class="description"><p>Overview of HTML &lt;input&gt; tage and differences of types</p></div>
-          <nav class="button"><a href="/pages/page-input-element.html" target="_blank">READ IT</a></nav>
-        </div>
-
-        <div class="container">
-          <img src="/assets/images/background.jpg" alt="green color wallpaper">
-          <img src="/assets/images/transparent-darker.png" alt="" class="top-image">
-          <div class="topic"><h2>Structural Elements</h2></div>
-          <div class="description"><p>Structural elements in HTML</p></div>
-          <nav class="button"><a href="/pages/page-structural-elements.html" target="_blank">READ IT</a></nav>
-        </div>
-      </div>
-    </section>
-
-    <section id="About" style="padding-top: 30px;">
-      <div>
-        <h2>About Us</h2>
-      </div>
-      <div>
-        <p>        
-          Welcome to <b>CodePulse</b>, your go-to resource for everything related to HTML! Our mission is to provide high-quality
-          educational content to help beginners learn HTML, and to provide valuable insights and techniques for more experienced
-          developers. <br>
-          What You'll Find Here:
-        </p>
-        
+      <div id="navbar">
+        <nav>
           <ul>
-            <li>Articles covering a wide range of HTML topics, from basic syntax to advanced techniques.</li>
-            <li>Tutorials and guides to help you build your skills and create stunning web pages.</li>
-            <li>Tips, tricks, and best practices for writing clean, efficient HTML code.</li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
+        </nav>
+
+        <i class="fa-solid fa-bars" id="menu-logo"></i>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="row">
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">HTML Introduction</h2>
+
+          <p class="description">
+            Introduction to Hyper Text Markup Language (HTML)
+          </p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">Text Semantics</h2>
+
+          <p class="description">
+            Overview of HTML tags that used with paragraph
+          </p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">HTML Lists</h2>
+
+          <p class="description">Overview of HTML List and differences</p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">Embedding Multimedia</h2>
+
+          <p class="description">How to embedded multimedia into web sites</p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">HTML Tables</h2>
+
+          <p class="description">Overview of HTML tables</p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">HTML Form</h2>
+
+          <p class="description">Overview of HTML form</p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">HTML &lt;input&gt; Element</h2>
+
+          <p class="description">
+            Overview of HTML &lt;input&gt; tage and differences of types
+          </p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+
+        <div class="card">
+          <img src="/assets/images/background.jpg" alt="Background image" />
+
+          <img
+            src="/assets/images/transparent-darker.png"
+            alt=""
+            class="transparent-img"
+          />
+
+          <h2 class="title">Structural Elements</h2>
+
+          <p class="description">Structural elements in HTML</p>
+
+          <nav class="button"><a href="">READ IT</a></nav>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div>
+        <h2 class="section-title">About Us</h2>
+      </div>
+      <div class="about-desc">
         <p>
-          Our team of passionate web developers and educators is dedicated to helping you succeed in your journey to mastering
-          HTML. Whether you're just starting out or looking to expand your knowledge, we're here to support you every step of
-          the way.
-        
-          If you have any questions, suggestions, or feedback, please don't hesitate to get in touch with us at [contact
-          email/social media links].
-        
-          Happy coding!
+          Welcome to <b>CodePulse</b>, your go-to resource for everything
+          related to HTML! Our mission is to provide high-quality educational
+          content to help beginners learn HTML, and to provide valuable insights
+          and techniques for more experienced developers.
+          <br />
+          <br />
+          What You'll Find Here:
+          <br />
+          <br />
+        </p>
+
+        <ul>
+          <li>
+            Articles covering a wide range of HTML topics, from basic syntax to
+            advanced techniques.
+          </li>
+          <li>
+            Tutorials and guides to help you build your skills and create
+            stunning web pages.
+          </li>
+          <li>
+            Tips, tricks, and best practices for writing clean, efficient HTML
+            code.
+          </li>
+        </ul>
+        <p>
+          <br />
+          Our team of passionate web developers and educators is dedicated to
+          helping you succeed in your journey to mastering HTML. Whether you're
+          just starting out or looking to expand your knowledge, we're here to
+          support you every step of the way. If you have any questions,
+          suggestions, or feedback, please don't hesitate to get in touch with
+          us at [contact email/social media links]. Happy coding!
         </p>
       </div>
     </section>
 
-    <section id="Contact">
+    <section id="contact">
       <div>
-        <h2>Contact Us</h2>
+        <h2 class="section-title">Contact Us</h2>
       </div>
       <div>
-        <form action="/">
-          <input type="text" name="fullName" placeholder="Enter your full name" required>
-          <input type="text" name="email" placeholder="Enter your email address" required>
-          <textarea name="message" id="textArea" cols="30" rows="10" placeholder="Enter your message here" required></textarea><br>
-          <input type="submit" name="" value="submit" class="btn">
+        <form>
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <textarea
+            name="message"
+            id="textArea"
+            cols="30"
+            rows="10"
+            placeholder="Enter your message here"
+            required
+          ></textarea
+          ><br />
+          <input type="submit" name="" value="Submit" class="btn" />
         </form>
       </div>
-    </section>  
-    
-    <footer>
-      <img src="/assets/images/logo-white.png" alt="CodePulse logo">
+    </section>
 
-      <div>
+    <footer>
+      <div class="logo-container">
+        <img src="/assets/images/logo-white.png" alt="CodePulse logo" />
+
         <h1>CodePulse</h1>
       </div>
 
       <p>
-        ljanindulokitha@gmail.com <br>
-        Copyright &copy:2024 Designed by <span>LOKITHA</span>
+        ljanindulokitha@gmail.com <br />
+        Copyright &copy:2024 Designed by Lokitha
       </p>
     </footer>
   </body>
