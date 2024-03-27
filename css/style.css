@@ -47,8 +47,16 @@ nav ul {
 }
 
 nav ul li {
+  padding: 15px 20px;
   margin-right: 25px;
   list-style: none;
+  border-radius: 15px;
+
+  transition: box-shadow 0.2s ease-out;
+}
+
+nav ul li:hover {
+  box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
 }
 
 #menu-logo {
