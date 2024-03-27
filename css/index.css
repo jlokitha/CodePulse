@@ -172,6 +172,22 @@ textarea {
 
   /* CSS for card when resolution drop to 567px */
 
+  #home {
+    display: flex;
+    overflow-x: scroll;
+    padding-top: 20px;
+  }
+
+  #home::-webkit-scrollbar {
+    display: none;
+  }
+
+  .row {
+    min-width: fit-content;
+    max-width: max-content;
+    display: flex;
+  }
+
   .card {
     min-width: 400px;
     background-color: rgb(19, 18, 18);
@@ -202,6 +218,13 @@ textarea {
     font-size: 1.3rem;
     margin: 15px 5px;
     padding: 5px;
+
+    height: 30px;
+    overflow-y: scroll;
+  }
+
+  .card .description::-webkit-scrollbar {
+    display: none;
   }
 
   .card .button {
@@ -218,10 +241,10 @@ textarea {
 
   form input,
   textarea {
-    width: 70%;
+    width: 90%;
   }
 
   .btn {
-    width: 25%;
+    width: 50%;
   }
 }

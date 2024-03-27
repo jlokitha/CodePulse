@@ -1,0 +1,71 @@
+section div h1 {
+  text-align: left;
+  margin: 30px 0;
+  font-size: 4rem;
+}
+
+section div h2 {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+section div h3 {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+.content {
+  padding: 40px 0;
+  border-bottom: 1px solid gray;
+}
+
+.content article ul li {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content article p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content img {
+  width: 30%;
+  height: 30%;
+  margin: 20px 0;
+  object-fit: cover;
+}
+
+.content span {
+  color: rgb(253, 253, 133);
+}
+
+.content table {
+  border: 1px solid grey;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.content table th {
+  border: 1px solid grey;
+}
+
+.content table td {
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+/* 0px -> 576px */
+@media screen and (max-width: 576px) {
+  .content table th,
+  .content table td {
+    font-size: 1.2rem;
+  }
+
+  .content img {
+    width: 100%;
+    height: 100%;
+  }
+}
