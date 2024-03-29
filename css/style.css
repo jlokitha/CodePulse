@@ -103,8 +103,27 @@ footer p {
   line-height: 1.9rem;
 }
 
-/* 0px -> 576px */
+/* >= 576px */
 @media screen and (max-width: 576px) {
+  #navbar nav {
+    display: none;
+  }
+
+  #menu-logo {
+    display: block;
+  }
+
+  footer img {
+    width: 12%;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* >= 768px */
+@media screen and (max-width: 768px) {
   #navbar nav {
     display: none;
   }
