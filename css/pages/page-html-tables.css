@@ -43,10 +43,41 @@ section div h3 {
   color: rgb(253, 253, 133);
 }
 
+/* >= 1400px */
+
+@media screen and (max-width: 1400px) {
+  .content img {
+    width: 60%;
+  }
+}
+
+/* >= 1200px */
+
+@media screen and (max-width: 1200px) {
+  .content img {
+    width: 70%;
+  }
+}
+
+/* >= 992px */
+
+@media screen and (max-width: 992px) {
+  .content img {
+    width: 80%;
+  }
+}
+
+/* >= 768px */
+
+@media screen and (max-width: 768px) {
+  .content img {
+    width: 100%;
+  }
+}
+
 /* 0px -> 576px */
 @media screen and (max-width: 576px) {
   .content img {
     width: 100%;
-    height: 100%;
   }
 }
