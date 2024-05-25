@@ -71,25 +71,29 @@
 /* CSS for section about */
 
 #about {
-  background-color: rgb(49, 49, 49);
+  background-color: #262626;
   padding-top: 20px;
 }
 
 .section-title {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: fit-content;
-  padding: 10px 25px;
+  padding: 10px 40px;
   border: 2px solid white;
-  border-radius: 40px;
+  border-radius: 25px;
   margin-bottom: 20px;
+}
+
+.about-desc ul {
+  padding-left: 2em;
 }
 
 .about-desc p,
 li {
   color: white;
-  font-size: 1.2rem;
-  word-spacing: 0.3rem;
+  font-size: 1rem;
+  word-spacing: 0.2rem;
   line-height: 1.5rem;
 }
 
