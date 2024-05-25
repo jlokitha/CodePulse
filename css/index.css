@@ -1,84 +1,65 @@
 /* CSS for section home */
 
 #home {
+  margin-top: 10px;
   background-color: rgb(36, 33, 33);
 }
 
-.row {
-  max-width: 100%;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.row:first-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-}
-
-.row:first-child {
-  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
 /* CSS for cards */
 
 .card {
-  position: relative;
-  display: inline-block;
-  margin: 0px 2px;
-}
+  min-width: 100%;
+  background-image: url(/assets/images/background.jpg);
+  background-size: cover;
+  object-fit: cover;
+  object-position: center;
+  padding: 40px 20px;
+  border: 1px solid rgb(71, 71, 71);
+  border-radius: 10px;
+  gap: 20px;
 
-.card img {
-  width: 100%;
-}
-
-.transparent-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card .title {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
-  color: white;
-  font-size: 2.5rem;
+  font-size: 25px;
+  height: 90px;
   text-align: center;
-
-  width: 70%;
-  padding: 5px;
-  margin: 10px;
 }
 
 .card .description {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
-  color: white;
-  font-size: 1.6rem;
+  font-size: 1rem;
+  height: 90px;
   text-align: center;
-
-  width: 70%;
-  padding: 5px;
-  margin: 10px;
+  overflow: scroll;
 }
 
 .card .button {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
   border: 2px solid white;
   border-radius: 10px;
 
-  padding: 15px 30px;
+  padding: 10px 30px;
 
   transition: box-shadow 0.2s ease-out;
 }
@@ -142,329 +123,30 @@ textarea {
   background-color: rgba(19, 18, 18, 0.788);
 }
 
-/* >= 1400px */
-
-@media screen and (max-width: 1400px) {
-  .card .title {
-    font-size: 2rem;
-  }
-
-  .card .description {
-    font-size: 1.3rem;
-  }
-
-  .card .button {
-    padding: 10px 25px;
-  }
-
-  form input,
-  textarea {
-    width: 60%;
-  }
-
-  .btn {
-    width: 20%;
-  }
-}
-
-/* >= 1200px */
-
-@media screen and (max-width: 1200px) {
-  .card .title {
-    font-size: 1.6rem;
-  }
-
-  .card .description {
-    font-size: 1.2rem;
-  }
-
-  .card .button {
-    padding: 10px 25px;
-  }
-
-  form input,
-  textarea {
-    width: 60%;
-  }
-
-  .btn {
-    width: 20%;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* >= 992px */
-
-@media screen and (max-width: 992px) {
-  .card .title {
-    font-size: 1.6rem;
-  }
-
-  .card .description {
-    font-size: 1.2rem;
-  }
-
-  .card .button {
-    padding: 8px 20px;
-  }
-
-  form input,
-  textarea {
-    width: 60%;
-  }
-
-  .btn {
-    width: 20%;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-}
-
 /* >= 768px */
 
-@media screen and (max-width: 768px) {
-  /* Reset styles for .card elements */
-  .row {
-    display: block;
-  }
-
-  .card {
-    position: static; /* Reset position */
-    display: block; /* Reset display */
-    margin: 0; /* Reset margin */
-  }
-
-  .card img {
-    width: auto; /* Reset image width */
-  }
-
-  .transparent-img {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    z-index: auto; /* Reset z-index */
-  }
-
-  .card .title,
-  .card .description,
-  .card .button {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    transform: none; /* Reset transform */
-    z-index: auto; /* Reset z-index */
-
-    color: initial; /* Reset color */
-    font-size: initial; /* Reset font-size */
-    text-align: initial; /* Reset text-align */
-    padding: initial; /* Reset padding */
-    margin: initial; /* Reset margin */
-    border: initial; /* Reset border */
-    border-radius: initial; /* Reset border-radius */
-  }
-
-  /* CSS for card when resolution drop to 768px */
-
-  #home {
-    display: flex;
+@media (max-width: 769px) {
+  .container {
+    padding: 20px 0;
+    flex-direction: row;
     overflow-x: scroll;
-    padding-top: 20px;
-  }
-
-  #home::-webkit-scrollbar {
-    display: none;
+    gap: 30px;
   }
 
   .row {
-    min-width: fit-content;
-    /* max-width: max-content; */
-    display: flex;
+    gap: 30px;
   }
 
   .card {
     min-width: 400px;
-    background-color: rgb(19, 18, 18);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .card img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-  }
-
-  .transparent-img {
-    display: none;
-  }
-
-  .card .title {
-    color: white;
-    font-size: 1.7rem;
-    margin: 10px 5px;
-    padding: 5px;
-  }
-
-  .card .description {
-    color: white;
-    font-size: 1.3rem;
-    margin: 15px 5px;
-    padding: 5px;
-
-    height: 30px;
-    overflow-y: scroll;
-  }
-
-  .card .description::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card .button {
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  form input,
-  textarea {
-    width: 90%;
-  }
-
-  .btn {
-    width: 50%;
   }
 }
 
-/* 0px -> 576px */
+/* >= 425px */
 
-@media screen and (max-width: 576px) {
-  /* Reset styles for .card elements */
-  .row {
-    display: block;
-  }
-
+@media (max-width: 426px) {
   .card {
-    position: static; /* Reset position */
-    display: block; /* Reset display */
-    margin: 0; /* Reset margin */
-  }
-
-  .card img {
-    width: auto; /* Reset image width */
-  }
-
-  .transparent-img {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    z-index: auto; /* Reset z-index */
-  }
-
-  .card .title,
-  .card .description,
-  .card .button {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    transform: none; /* Reset transform */
-    z-index: auto; /* Reset z-index */
-
-    color: initial; /* Reset color */
-    font-size: initial; /* Reset font-size */
-    text-align: initial; /* Reset text-align */
-    padding: initial; /* Reset padding */
-    margin: initial; /* Reset margin */
-    border: initial; /* Reset border */
-    border-radius: initial; /* Reset border-radius */
-  }
-
-  /* CSS for card when resolution drop to 567px */
-
-  #home {
-    display: flex;
-    overflow-x: scroll;
-    padding-top: 20px;
-  }
-
-  #home::-webkit-scrollbar {
-    display: none;
-  }
-
-  .row {
-    min-width: fit-content;
-    max-width: max-content;
-    display: flex;
-  }
-
-  .card {
-    min-width: 400px;
-    background-color: rgb(19, 18, 18);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .card img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-  }
-
-  .transparent-img {
-    display: none;
-  }
-
-  .card .title {
-    color: white;
-    font-size: 1.7rem;
-    margin: 10px 5px;
-    padding: 5px;
-  }
-
-  .card .description {
-    color: white;
-    font-size: 1.3rem;
-    margin: 15px 5px;
-    padding: 5px;
-
-    height: 30px;
-    overflow-y: scroll;
-  }
-
-  .card .description::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card .button {
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  form input,
-  textarea {
-    width: 90%;
-  }
-
-  .btn {
-    width: 50%;
+    min-width: 300px;
+    gap: 0;
   }
 }
