@@ -2,6 +2,9 @@
 
 #home {
   background-color: rgb(36, 33, 33);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .row {
@@ -11,6 +14,7 @@
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .row:first-child {
@@ -20,71 +24,44 @@
 /* CSS for cards */
 
 .card {
-  position: relative;
-  display: inline-block;
-  margin: 0px 2px;
-}
-
-.card img {
-  width: 100%;
-}
-
-.transparent-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  height: 300px;
+  background-image: url(/assets/images/background.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 .card .title {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
-  color: white;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   text-align: center;
-
-  width: 70%;
-  padding: 5px;
-  margin: 10px;
 }
 
 .card .description {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
-  color: white;
-  font-size: 1.6rem;
+  font-size: 1rem;
   text-align: center;
-
-  width: 70%;
-  padding: 5px;
-  margin: 10px;
 }
 
 .card .button {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-
   border: 2px solid white;
   border-radius: 10px;
-
-  padding: 15px 30px;
-
+  padding: 10px 30px;
   transition: box-shadow 0.2s ease-out;
 }
 
 .card .button:hover {
   box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+.card .button a {
+  font-size: 0.9rem;
+}
+
+.height-400 {
+  height: 400px;
 }
 
 /* CSS for section about */
@@ -96,9 +73,9 @@
 
 .section-title {
   color: white;
-  font-size: 2rem;
+  font-size: 1.1rem;
   width: fit-content;
-  padding: 10px 25px;
+  padding: 10px 30px;
   border: 2px solid white;
   border-radius: 40px;
   margin-bottom: 20px;
@@ -107,9 +84,9 @@
 .about-desc p,
 li {
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   word-spacing: 0.3rem;
-  line-height: 1.5rem;
+  line-height: 1.3rem;
 }
 
 /* CSS for section contact */
@@ -122,9 +99,9 @@ li {
 form input,
 textarea {
   width: 50%;
-  padding: 15px;
+  padding: 10px 15px;
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0.4rem 0;
   background-color: #191919;
   border: none;
@@ -145,25 +122,9 @@ textarea {
 /* >= 1400px */
 
 @media screen and (max-width: 1400px) {
-  .card .title {
-    font-size: 2rem;
-  }
-
-  .card .description {
-    font-size: 1.3rem;
-  }
-
-  .card .button {
-    padding: 10px 25px;
-  }
-
   form input,
   textarea {
     width: 60%;
-  }
-
-  .btn {
-    width: 20%;
   }
 }
 
@@ -171,28 +132,11 @@ textarea {
 
 @media screen and (max-width: 1200px) {
   .card .title {
-    font-size: 1.6rem;
-  }
-
-  .card .description {
-    font-size: 1.2rem;
-  }
-
-  .card .button {
-    padding: 10px 25px;
-  }
-
-  form input,
-  textarea {
-    width: 60%;
+    font-size: 1.5rem;
   }
 
   .btn {
     width: 20%;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
   }
 }
 
@@ -200,80 +144,43 @@ textarea {
 
 @media screen and (max-width: 992px) {
   .card .title {
-    font-size: 1.6rem;
-  }
-
-  .card .description {
     font-size: 1.2rem;
   }
 
+  .card .description {
+    font-size: 0.9rem;
+  }
+
   .card .button {
-    padding: 8px 20px;
+    padding: 8px 25px;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+
+  .about-desc p,
+  li {
+    font-size: 0.8rem;
   }
 
   form input,
   textarea {
-    width: 60%;
-  }
-
-  .btn {
-    width: 20%;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 /* >= 768px */
 
 @media screen and (max-width: 768px) {
-  /* Reset styles for .card elements */
-  .row {
-    display: block;
-  }
-
-  .card {
-    position: static; /* Reset position */
-    display: block; /* Reset display */
-    margin: 0; /* Reset margin */
-  }
-
-  .card img {
-    width: auto; /* Reset image width */
-  }
-
-  .transparent-img {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    z-index: auto; /* Reset z-index */
-  }
-
-  .card .title,
-  .card .description,
-  .card .button {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    transform: none; /* Reset transform */
-    z-index: auto; /* Reset z-index */
-
-    color: initial; /* Reset color */
-    font-size: initial; /* Reset font-size */
-    text-align: initial; /* Reset text-align */
-    padding: initial; /* Reset padding */
-    margin: initial; /* Reset margin */
-    border: initial; /* Reset border */
-    border-radius: initial; /* Reset border-radius */
-  }
-
-  /* CSS for card when resolution drop to 768px */
-
   #home {
-    display: flex;
+    flex-direction: row;
     overflow-x: scroll;
-    padding-top: 20px;
+    padding: 10px;
+  }
+
+  .height-400 {
+    height: 300px;
   }
 
   #home::-webkit-scrollbar {
@@ -282,42 +189,17 @@ textarea {
 
   .row {
     min-width: fit-content;
-    /* max-width: max-content; */
-    display: flex;
   }
 
   .card {
     min-width: 400px;
-    background-color: rgb(19, 18, 18);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .card img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-  }
-
-  .transparent-img {
-    display: none;
   }
 
   .card .title {
-    color: white;
-    font-size: 1.7rem;
-    margin: 10px 5px;
-    padding: 5px;
   }
 
   .card .description {
-    color: white;
-    font-size: 1.3rem;
-    margin: 15px 5px;
-    padding: 5px;
-
-    height: 30px;
+    height: 50px;
     overflow-y: scroll;
   }
 
@@ -325,138 +207,25 @@ textarea {
     display: none;
   }
 
-  .card .button {
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
   form input,
   textarea {
-    width: 90%;
+    width: 80%;
   }
 
   .btn {
-    width: 50%;
+    width: 30%;
   }
 }
 
 /* 0px -> 576px */
 
 @media screen and (max-width: 576px) {
-  /* Reset styles for .card elements */
-  .row {
-    display: block;
-  }
-
-  .card {
-    position: static; /* Reset position */
-    display: block; /* Reset display */
-    margin: 0; /* Reset margin */
-  }
-
-  .card img {
-    width: auto; /* Reset image width */
-  }
-
-  .transparent-img {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    z-index: auto; /* Reset z-index */
-  }
-
-  .card .title,
-  .card .description,
-  .card .button {
-    position: static; /* Reset position */
-    top: auto; /* Reset top */
-    left: auto; /* Reset left */
-    transform: none; /* Reset transform */
-    z-index: auto; /* Reset z-index */
-
-    color: initial; /* Reset color */
-    font-size: initial; /* Reset font-size */
-    text-align: initial; /* Reset text-align */
-    padding: initial; /* Reset padding */
-    margin: initial; /* Reset margin */
-    border: initial; /* Reset border */
-    border-radius: initial; /* Reset border-radius */
-  }
-
-  /* CSS for card when resolution drop to 567px */
-
-  #home {
-    display: flex;
-    overflow-x: scroll;
-    padding-top: 20px;
-  }
-
-  #home::-webkit-scrollbar {
-    display: none;
-  }
-
-  .row {
-    min-width: fit-content;
-    max-width: max-content;
-    display: flex;
-  }
-
-  .card {
-    min-width: 400px;
-    background-color: rgb(19, 18, 18);
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-  }
-
-  .card img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-  }
-
-  .transparent-img {
-    display: none;
-  }
-
   .card .title {
-    color: white;
     font-size: 1.7rem;
-    margin: 10px 5px;
-    padding: 5px;
-  }
-
-  .card .description {
-    color: white;
-    font-size: 1.3rem;
-    margin: 15px 5px;
-    padding: 5px;
-
-    height: 30px;
-    overflow-y: scroll;
-  }
-
-  .card .description::-webkit-scrollbar {
-    display: none;
-  }
-
-  .card .button {
-    width: auto;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
   }
 
   .section-title {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
   }
 
   form input,
@@ -465,6 +234,11 @@ textarea {
   }
 
   .btn {
-    width: 50%;
+    width: 40%;
+  }
+
+  form input,
+  textarea {
+    font-size: 0.9rem;
   }
 }
