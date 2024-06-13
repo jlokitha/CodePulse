@@ -1,7 +1,14 @@
 {
+<<<<<<< HEAD
   "liveServer.settings.port": 5503,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "files.autoSave": "onWindowChange"
+=======
+  "liveServer.settings.port": 5501,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+>>>>>>> 828c94b55c5c807853d942e417d4d756489ee10f
 }

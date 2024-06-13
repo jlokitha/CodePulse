@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,7 +52,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 15px 20px;
+  padding: 10px 20px;
   margin-right: 25px;
   list-style: none;
   border-radius: 15px;
@@ -61,6 +62,12 @@ nav ul li {
 
 nav ul li:hover {
   box-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5);
+}
+
+a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 #menu-logo {
@@ -74,7 +81,7 @@ nav ul li:hover {
 
 section {
   max-width: 100%;
-  padding: 0px 5%;
+  padding: 0px 10%;
   padding-bottom: 20px;
 }
 
@@ -107,19 +114,14 @@ footer p {
   line-height: 1.5rem;
 }
 
-/* >= 576px */
-@media screen and (max-width: 576px) {
-  #navbar nav {
-    display: none;
-  }
-
-  #menu-logo {
-    display: block;
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
   }
 }
 
 /* >= 768px */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #navbar nav {
     display: none;
   }

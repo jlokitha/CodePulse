@@ -1,15 +1,24 @@
 /* CSS for section home */
 
 #home {
+  margin-top: 10px;
   background-color: rgb(36, 33, 33);
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.row {
-  max-width: 100%;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.row:first-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -67,7 +76,7 @@
 /* CSS for section about */
 
 #about {
-  background-color: rgb(49, 49, 49);
+  background-color: #262626;
   padding-top: 20px;
 }
 
@@ -77,8 +86,12 @@
   width: fit-content;
   padding: 10px 30px;
   border: 2px solid white;
-  border-radius: 40px;
+  border-radius: 25px;
   margin-bottom: 20px;
+}
+
+.about-desc ul {
+  padding-left: 2em;
 }
 
 .about-desc p,
@@ -92,7 +105,6 @@ li {
 /* CSS for section contact */
 
 #contact {
-  background-color: rgb(36, 33, 33);
   padding-top: 20px;
 }
 
@@ -103,28 +115,28 @@ textarea {
   color: #fff;
   font-size: 1.1rem;
   margin: 0.4rem 0;
-  background-color: #191919;
+  background-color: rgb(22, 22, 22);
   border: none;
   border-radius: 10px;
 }
 
 .btn {
-  width: 15%;
+  width: 300px;
   cursor: pointer;
 
   transition: background-color 0.2s ease-out;
 }
 
 .btn:hover {
-  background-color: rgba(19, 18, 18, 0.788);
+  background-color: rgba(22, 22, 22, 0.788);
 }
 
-/* >= 1400px */
+/* >= 1024px */
 
 @media screen and (max-width: 1400px) {
   form input,
   textarea {
-    width: 60%;
+    width: 600px;
   }
 }
 
@@ -217,7 +229,7 @@ textarea {
   }
 }
 
-/* 0px -> 576px */
+/* >= 425px */
 
 @media screen and (max-width: 576px) {
   .card .title {
