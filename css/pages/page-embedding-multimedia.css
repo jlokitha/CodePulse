@@ -32,7 +32,7 @@ section div h3 {
 }
 
 .content img {
-  width: 50%;
+  width: 60%;
   margin: 20px 0;
   object-fit: cover;
 }
@@ -48,12 +48,12 @@ section div h3 {
 }
 
 .content table th {
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 1px solid grey;
 }
 
 .content table td {
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 5px;
   border: 1px solid grey;
 }
@@ -62,7 +62,7 @@ section div h3 {
 
 @media screen and (max-width: 1400px) {
   .content img {
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -70,7 +70,7 @@ section div h3 {
 
 @media screen and (max-width: 1200px) {
   .content img {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -78,7 +78,7 @@ section div h3 {
 
 @media screen and (max-width: 992px) {
   .content img {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -92,7 +92,8 @@ section div h3 {
 
 /* 0px -> 576px */
 @media screen and (max-width: 576px) {
-  .content img {
-    width: 100%;
+  .content table tr td:nth-child(2),
+  .content table tr th:nth-child(2) {
+    display: none;
   }
 }

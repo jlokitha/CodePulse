@@ -32,8 +32,8 @@ section div h3 {
 }
 
 .content img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: auto;
   margin: 20px 0;
   object-fit: cover;
 }
@@ -49,12 +49,12 @@ section div h3 {
 }
 
 .content table th {
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 1px solid grey;
 }
 
 .content table td {
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 5px;
   border: 1px solid grey;
 }
@@ -63,7 +63,7 @@ section div h3 {
 
 @media screen and (max-width: 1400px) {
   .content img {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -71,7 +71,7 @@ section div h3 {
 
 @media screen and (max-width: 1200px) {
   .content img {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -79,7 +79,7 @@ section div h3 {
 
 @media screen and (max-width: 992px) {
   .content img {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -87,7 +87,7 @@ section div h3 {
 
 @media screen and (max-width: 768px) {
   .content img {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -95,5 +95,10 @@ section div h3 {
 @media screen and (max-width: 576px) {
   .content img {
     width: 100%;
+  }
+
+  .content table th:nth-child(2),
+  .content table td:nth-child(2) {
+    display: none;
   }
 }

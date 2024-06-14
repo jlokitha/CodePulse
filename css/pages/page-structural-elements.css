@@ -32,8 +32,8 @@ section div h3 {
 }
 
 .content img {
-  width: 30%;
-  height: 30%;
+  width: 50%;
+  height: auto;
   margin: 20px 0;
   object-fit: cover;
 }
@@ -70,7 +70,7 @@ section div h3 {
 
 @media screen and (max-width: 768px) {
   .content img {
-    width: 100%;
+    width: 90%;
   }
 }
 

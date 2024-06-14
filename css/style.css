@@ -110,7 +110,7 @@ footer img {
 
 footer p {
   width: max-content;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   line-height: 1.5rem;
 }
 
@@ -128,5 +128,18 @@ footer p {
 
   #menu-logo {
     display: block;
+  }
+}
+
+/* 0px -> 576px */
+@media screen and (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  footer p {
+    text-align: center;
   }
 }
